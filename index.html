@@ -9,32 +9,87 @@
 <body>
     <div class="header">
         <div class="header-top-row">
-            <form action="www.example.com" method="post">
+            <form action="www.example.com" method="get">
                 <button class="search-button">
                     <div class="search-icon">
                         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><title>magnify</title><path d="M9.5,3A6.5,6.5 0 0,1 16,9.5C16,11.11 15.41,12.59 14.44,13.73L14.71,14H15.5L20.5,19L19,20.5L14,15.5V14.71L13.73,14.44C12.59,15.41 11.11,16 9.5,16A6.5,6.5 0 0,1 3,9.5A6.5,6.5 0 0,1 9.5,3M9.5,5C7,5 5,7 5,9.5C5,12 7,14 9.5,14C12,14 14,12 14,9.5C14,7 12,5 9.5,5Z" /></svg>
                     </div>
                 </button>
-                <input type="text">
+                <input type="text" name="search-input">
             </form>
-            <div class="notification-icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><title>bell-ring</title><path d="M21,19V20H3V19L5,17V11C5,7.9 7.03,5.17 10,4.29C10,4.19 10,4.1 10,4A2,2 0 0,1 12,2A2,2 0 0,1 14,4C14,4.1 14,4.19 14,4.29C16.97,5.17 19,7.9 19,11V17L21,19M14,21A2,2 0 0,1 12,23A2,2 0 0,1 10,21M19.75,3.19L18.33,4.61C20.04,6.3 21,8.6 21,11H23C23,8.07 21.84,5.25 19.75,3.19M1,11H3C3,8.6 3.96,6.3 5.67,4.61L4.25,3.19C2.16,5.25 1,8.07 1,11Z" /></svg></div>
-            <img src="" alt="account symbol">
-            <p>Morgan Oakley</p>
+            <div class="header-top-icons">
+                <div class="notification-icon">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><title>bell-ring</title><path d="M21,19V20H3V19L5,17V11C5,7.9 7.03,5.17 10,4.29C10,4.19 10,4.1 10,4A2,2 0 0,1 12,2A2,2 0 0,1 14,4C14,4.1 14,4.19 14,4.29C16.97,5.17 19,7.9 19,11V17L21,19M14,21A2,2 0 0,1 12,23A2,2 0 0,1 10,21M19.75,3.19L18.33,4.61C20.04,6.3 21,8.6 21,11H23C23,8.07 21.84,5.25 19.75,3.19M1,11H3C3,8.6 3.96,6.3 5.67,4.61L4.25,3.19C2.16,5.25 1,8.07 1,11Z" /></svg>
+                </div>
+                <div class="account-icon">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><title>account-circle-outline</title><path d="M12,2A10,10 0 0,0 2,12A10,10 0 0,0 12,22A10,10 0 0,0 22,12A10,10 0 0,0 12,2M7.07,18.28C7.5,17.38 10.12,16.5 12,16.5C13.88,16.5 16.5,17.38 16.93,18.28C15.57,19.36 13.86,20 12,20C10.14,20 8.43,19.36 7.07,18.28M18.36,16.83C16.93,15.09 13.46,14.5 12,14.5C10.54,14.5 7.07,15.09 5.64,16.83C4.62,15.5 4,13.82 4,12C4,7.59 7.59,4 12,4C16.41,4 20,7.59 20,12C20,13.82 19.38,15.5 18.36,16.83M12,6C10.06,6 8.5,7.56 8.5,9.5C8.5,11.44 10.06,13 12,13C13.94,13 15.5,11.44 15.5,9.5C15.5,7.56 13.94,6 12,6M12,11A1.5,1.5 0 0,1 10.5,9.5A1.5,1.5 0 0,1 12,8A1.5,1.5 0 0,1 13.5,9.5A1.5,1.5 0 0,1 12,11Z" /></svg>
+                </div>
+                <p class="logo">Morgan Oakley</p>
+            </div>
         </div>
         <div class="header-bottom-row">
-            <img src="" alt="account symbol big">
-            <div class="greeting-container">
-                <p>Hi there,</p>
-                <p>Morgan Oakley (@morgan)</p>
+            <div class="header-account-container">
+                <div class="account-icon large">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><title>account-circle-outline</title><path d="M12,2A10,10 0 0,0 2,12A10,10 0 0,0 12,22A10,10 0 0,0 22,12A10,10 0 0,0 12,2M7.07,18.28C7.5,17.38 10.12,16.5 12,16.5C13.88,16.5 16.5,17.38 16.93,18.28C15.57,19.36 13.86,20 12,20C10.14,20 8.43,19.36 7.07,18.28M18.36,16.83C16.93,15.09 13.46,14.5 12,14.5C10.54,14.5 7.07,15.09 5.64,16.83C4.62,15.5 4,13.82 4,12C4,7.59 7.59,4 12,4C16.41,4 20,7.59 20,12C20,13.82 19.38,15.5 18.36,16.83M12,6C10.06,6 8.5,7.56 8.5,9.5C8.5,11.44 10.06,13 12,13C13.94,13 15.5,11.44 15.5,9.5C15.5,7.56 13.94,6 12,6M12,11A1.5,1.5 0 0,1 10.5,9.5A1.5,1.5 0 0,1 12,8A1.5,1.5 0 0,1 13.5,9.5A1.5,1.5 0 0,1 12,11Z" /></svg>
+                </div>
+                <div class="greeting-container">
+                    <p>Hi there,</p>
+                    <p>Morgan Oakley (@morgan)</p>
+                </div>
             </div>
-            <a href="" class="header-button">New</a>
-            <a href="" class="header-button">Upload</a>
-            <a href="" class="header-button">Share</a>
+            <div class="header-links-container">
+                <a href="" class="header-button">New</a>
+                <a href="" class="header-button">Upload</a>
+                <a href="" class="header-button">Share</a>
+            </div>
         </div>
-
     </div>
     <div class="sidebar">
-
+        <div class="sidebar-heading-container">
+            <div class="sidebar-logo">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><title>tangram</title><path d="M20 2H4C2.9 2 2 2.9 2 4V20C2 21.1 2.9 22 4 22H20C21.1 22 22 21.1 22 20V4C22 2.9 21.1 2 20 2M18.59 4L12 10.59L5.41 4H18.59M13.41 12L16.5 8.91L19.59 12L16.5 15.09L13.41 12M14.59 16H9.41L12 13.41L14.59 16M4 5.41L10.59 12L4 18.59V5.41M11.59 20H5.41L7.41 18H13.59L11.59 20M20 20H14.41L20 14.41V20M20 9.59L17.91 7.5L20 5.41V9.59Z" /></svg>
+            </div>
+            <p class="sidebar-heading">Dashboard</p>
+        </div>
+        <ul class="sidebar-links-container">
+            <li>
+                <img src="./images/home.svg" alt="Home icon">
+                <a href="" class="sidebar-link">Home</a>
+            </li>
+            <li>
+                <img src="./images/card-account-details-outline.svg" alt="Profile icon">
+                <a href="" class="sidebar-link">Profile</a>
+            </li>
+            <li>
+                <img src="./images/message.svg" alt="Message icon">
+                <a href="" class="sidebar-link">Messages</a>
+            </li>
+            <li>
+                <img src="./images/clock-outline.svg" alt="History icon">
+                <a href="" class="sidebar-link">History</a>
+            </li>
+            <li>
+                <img src="./images/note-multiple-outline.svg" alt="Tasks icon">
+                <a href="" class="sidebar-link">Tasks</a>
+            </li>
+            <li>
+                <img src="./images/account-group-outline.svg" alt="Communities icon">
+                <a href="" class="sidebar-link">Communities</a>
+            </li>
+        </ul>
+        <ul class="sidebar-links-container">
+            <li>
+                <img src="./images/cog.svg" alt="Settings icon">
+                <a href="" class="sidebar-link">Settings</a></li>
+            <li>
+                <img src="./images/help-box.svg" alt="Support icon">
+                <a href="" class="sidebar-link">Support</a>
+            </li>
+            <li>
+                <img src="./images/shield-check-outline.svg" alt="Privacy icon">
+                <a href="" class="sidebar-link">Privacy</a>
+            </li>
+        </ul>
     </div>
     <div class="main-content">
         <h1>Main content</h1>

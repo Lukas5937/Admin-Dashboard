@@ -350,60 +350,181 @@
 
   :root {
     --system-ui: system-ui, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+    --blue: #1992D3
   }
 
   body {
     font-family: Roboto, var(--system-ui);
     display: grid;
     grid-template: 20vh 1fr / 15vw 1fr;
+    min-height: 100vh;
   }
+
+
+  /* header styling */
 
   .header {
     grid-column: 2 / -1;
-    background: rgb(105, 157, 105);
+    background: #FFFFFF;
+    padding: 0 48px;
   }
 
+  /* header first row styling */
+
   .header-top-row {
+    margin-bottom: 24px;
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: 1fr auto;
+    align-items: center;
+    gap: 10vw;
+    justify-content: space-between;
   }
 
   form {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: auto 1fr;
+    align-items: center;
   }
 
   .search-button {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: rgba(105, 157, 105, 0);
+    background-color: rgb(105 157 105 / 0);
     border: none;
   }
 
   .search-icon {
-    width: 16px;
+    width: 20px;
+    margin-bottom: -4px;
   }
 
   input[type="text"] {
-    background: rgb(208, 198, 198);
+    background: #E2E8F0;
     border-radius: 12px;
     border: none;
   }
 
-  .notification-icon {
-    width: 16px;
+  .header-top-icons {
+    padding-left: 64px;
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    align-items: center;
+    column-gap: 24px;
   }
+
+  .notification-icon {
+    width: 20px;
+  }
+
+  .account-icon {
+    width: 48px;
+  }
+
+  .logo {
+    font-weight: 500;
+  }
+
+  /* header second row styling */
 
   .header-bottom-row {
     display: grid;
-    grid-template-columns: repeat(5, 1fr);
+    grid-template-columns: 1fr auto;
+    align-items: center;
   }
 
-  .sidebar {
-    grid-row: 1 / -1;
-     background: rgb(132, 165, 208);
+  .header-account-container {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    align-items: center;
+    gap: 24px;
   }
+
+  .account-icon.large {
+    width: 64px;
+  }
+
+  .greeting-container :first-child {
+    font-size: 14px;
+    margin: 4px 0;
+  }
+
+  .greeting-container :nth-child(2) {
+    font-size: 20px;
+    margin: 4px 0;
+    font-weight: 700;
+  }
+
+  .header-links-container {
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    align-items: center;
+    column-gap: 48px;
+  }
+
+  .header-button {
+    color: white;
+    background: var(--blue);
+    padding: 0.5em 1.75em;
+    border-radius: 32px;
+    text-decoration: none;
+  }
+
+  /* sidebar styling */
+
+
+  .sidebar {
+    padding-left: 16px;
+    background: var(--blue);
+    grid-row: 1 / -1;
+    display: grid;
+    grid-template-rows: auto auto 1fr;
+    gap: 16px;
+  }
+
+  .sidebar-heading-container {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+  }
+
+  .sidebar-logo {
+    width: 48px;
+  }
+
+  .sidebar-heading {
+    font-size: 24px;
+    font-weight: 700;
+    color: #FFFFFF;
+  }
+
+  .sidebar-links-container {
+    padding: 0;
+  }
+
+  .sidebar-links-container > li {
+    margin-bottom: 16px;
+    list-style-type: none;
+    display: flex;
+    align-items: center;
+    gap: 16px;
+  }
+
+  .sidebar-links-container > li > img {
+    width: 20px;
+    margin-bottom: 0px;
+  }
+
+  .sidebar-links-container > li > a {
+    text-decoration: none;
+    color: #FFFFFF;
+    font-weight: 500;
+  }
+
+
+
+
+
 
   .main-content {
     grid-row: 2 / -1;
